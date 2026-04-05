@@ -19,3 +19,42 @@ This is a simple University Management System built using JavaScript. It is a so
 4. Track results and grades.
 
 5. Manages fees and payments.
+
+## Class design
+
+### Student
+
+ATTRIBUTES:
+
+- studentId : String
+- name : String
+- email : String
+- totalStudents : Number [static]
+
+METHODS:
+
+- constructor( studentId, name, email)
+- registerCourse(course : Course) : void
+- viewCourses() : void
+- getTotalStudents() : Number [static]
+
+### Course
+
+ATTRIBUTES:
+
+- courseId : String
+- title : String
+- availableSlots : Number [static]
+
+METHODS:
+
+- constructor ( courseId, title, availableSlots)
+- registerSlot() : void [static]
+- cancelSlot() : void [static]
+- getAvailableSlots() : Number [static]
+
+## HOW TO RUN THIS
+
+- Make sure that Node.js is installed
+- Open your terminal
+- Run
